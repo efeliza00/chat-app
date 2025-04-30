@@ -7,8 +7,6 @@ const ProfilePage = () => {
     const { authUser, updateProfile, isUpdatingProfile } = useAuthStore()
     const [profileImage, setProfileImage] = useState(null)
 
-    console.log(authUser)
-
     const createdAt = format(new Date(authUser?.createdAt), "MMMM dd, yyyy")
 
     const handleUploadProfile = async (e) => {

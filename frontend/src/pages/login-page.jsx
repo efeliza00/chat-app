@@ -49,7 +49,6 @@ const LoginPage = () => {
                     </div>
                 </div>
                 <form onSubmit={handleSubmit} className="space-y-4">
-                    {/* Email */}
                     <div className="space-y-1">
                         <label className="label">
                             <span className="label-text font-semibold">
