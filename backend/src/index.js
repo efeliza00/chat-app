@@ -12,7 +12,8 @@ import {
   server
 } from "./lib/socket.js";
 import authRoutes from "./routes/auth.route.js";
-import messageRoutes from "./routes/messages.route.js";
+import messageRoutes from "./routes/message.route.js";
+
 
 dotenv.config();
 
