@@ -28,8 +28,6 @@ export const getMessages = async (req, res) => {
       ],
     });
 
-    console.log()
-
     res.status(200).json(messages);
   } catch (error) {
     console.log("Error in getMessages controller: ", error.message);
