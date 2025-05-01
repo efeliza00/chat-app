@@ -7,7 +7,9 @@ const ProfilePage = () => {
     const { authUser, updateProfile, isUpdatingProfile } = useAuthStore()
     const [profileImage, setProfileImage] = useState(null)
 
-    const createdAt = format(new Date(authUser?.createdAt), "MMMM dd, yyyy")
+    const createdAt = authUser?.createdAt
+        ? format(new Date(authUser.createdAt), "MMMM dd, yyyy")
+        : "---"
 
     const handleUploadProfile = async (e) => {
         const file = e.target.files?.[0]
